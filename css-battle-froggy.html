@@ -1,0 +1,116 @@
+<!-- CSS Battle #Froggy -->
+
+
+<div id="container">
+    <div id="face">
+        <div id="eye"></div>
+        <div id="eye2"></div>
+        <div id="bottom"></div>
+    </div>
+
+</div>
+
+<style>
+    
+    * {
+        margin: 0px;
+    }
+
+    #container {
+        box-sizing: border-box;
+        height: 400px;
+        width: 400px;
+        background-color: #293462;
+    }
+
+
+    #face {
+        position: absolute;
+        top: 110px;
+        left: 200px;
+        transform: translate(-50%, 0);
+
+
+        width: 150px;
+        height: 100px;
+        border-radius: 50px;
+        background: radial-gradient(circle at 50% -130px,
+                #fe5f55 200px,
+                #A64942 200px);
+
+    }
+
+    #eye {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #FFF1C1;
+        border: 10px solid #FE5F55;
+    }
+
+    #eye:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #293462;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+
+    #eye2 {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: 85px;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #FFF1C1;
+        border: 10px solid #FE5F55;
+    }
+
+    #eye2:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #293462;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+
+
+    #face:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #293462;
+        top: 50%;
+        left: calc(50% + 5px);
+        border-radius: 10px;
+    }
+
+    #face:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #293462;
+        top: 50%;
+        left: calc(50% - 15px);
+        border-radius: 10px;
+    }
+
+   
+</style>
+
